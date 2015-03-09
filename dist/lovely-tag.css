@@ -1,0 +1,70 @@
+@charset "UTF-8";
+@-webkit-keyframes tagZoomIn {
+  from {
+    -webkit-transform: scale(0);
+    transform: scale(0); }
+
+  to {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+@keyframes tagZoomIn {
+  from {
+    -webkit-transform: scale(0);
+    transform: scale(0); }
+
+  to {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+.tags {
+  font-size: 0.8em;
+  margin: 0.5em 0; }
+  .tags .tag {
+    margin-right: 1em;
+    margin-bottom: 0.5em; }
+
+.tag {
+  display: inline-block;
+  padding: 0.3em 0.6em;
+  border-radius: 6px;
+  color: #777;
+  background: #f1f1f1;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s; }
+  .tag.tag-blue, .tag.tag-green, .tag.tag-red {
+    color: #fff; }
+  .tag.tag-blue {
+    background-color: #4a90e2; }
+  .tag.tag-green {
+    background-color: #2cc185; }
+  .tag.tag-red {
+    background-color: #f4726d; }
+  .tag.added {
+    -webkit-transform-origin: right 50%;
+    transform-origin: right 50%;
+    -webkit-animation: tagZoomIn 0.3s forwards;
+    animation: tagZoomIn 0.3s forwards; }
+  .tag.to-be-checked, .tag.to-be-crossed {
+    cursor: pointer;
+    color: #fff;
+    position: relative;
+    padding-right: 1.7em; }
+    .tag.to-be-checked:after, .tag.to-be-crossed:after {
+      position: absolute;
+      top: 0.2em;
+      right: 0.5em;
+      font-weight: bold; }
+  .tag.to-be-checked {
+    background: #2cc185; }
+    .tag.to-be-checked:after {
+      content: '✔'; }
+  .tag.to-be-crossed {
+    background: #f4726d; }
+    .tag.to-be-crossed:after {
+      content: '×'; }
+
+.new-tag input[type="checkbox"] {
+  display: none; }
+.new-tag .tag {
+  cursor: pointer; }

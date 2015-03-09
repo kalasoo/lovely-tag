@@ -1,0 +1,24 @@
+{
+  "name": "lovely-tag",
+  "version": "0.0.0",
+  "homepage": "https://github.com/kalasoo/lovely-tag",
+  "authors": [
+    "kalasoo <ym.kalasoo@gmail.com>"
+  ],
+  "description": "Lovely Tag & Input",
+  "main": "['dist/lovely-tag.js', 'dist/lovely-tag.css']",
+  "keywords": [
+    "tag"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.3"
+  }
+}

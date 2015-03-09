@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!doctype html>
 <html>
   <head>
@@ -56,4 +57,95 @@
     <script src="javascripts/scale.fix.js"></script>
     
   </body>
+=======
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lovely Tags</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        p {
+            margin-top: 2em;
+        }
+
+        .container {
+            width: 960px;
+            max-width: 960px;
+            margin: 100px auto;
+        }
+
+        input[type="text"] {
+            padding: 0;
+            border: none;
+            background-color: #f1f1f1;
+            outline: none;
+            padding: 0.5em;
+        }
+
+        input[type="text"]:focus {
+            background-color: #eaeaea;
+        }
+
+    </style>
+    <link rel="stylesheet" type="text/css" href="dist/lovely-tag.css">
+</head>
+<body>
+
+    <div class="container">
+        <h3>♥ Lovely Tag ♥</h3>
+
+        <p>
+            <pre><code>
+.tags
+    .tag
+    .tag.tag-blue
+    .tag.tag-green
+    .tag.tag-red
+    .tag.to-be-checked
+    .tag.to-be-crossed</code>
+            </pre>
+        </p>
+
+        <p>
+            <div class="tags">
+                <span class="tag">I'm a tag</span>
+                <span class="tag tag-blue">I'm blue</span>
+                <span class="tag tag-green">I'm green</span>
+                <span class="tag tag-red">Lol, but I'm red</span>
+                <span class="tag to-be-checked">Hah, I can be checked</span>
+                <span class="tag to-be-crossed">or crossed</span>
+            </div>
+        </p>
+
+        <p>
+            <pre><code>
+.new-tag
+    .tags
+        .tag
+        .new-tag-input</code>
+            </pre>
+        </p>
+
+        <div class="new-tag">
+            <div class="tags">
+                <input type="text" placeholder="add a new tag" class="new-tag-input">
+            </div>
+        </div>
+
+        <p>
+            <small>
+                Developed by <a href="http://weibo.com/kalasoo">Ming</a>.
+            </small>
+        </p>
+
+    </div>
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="dist/lovely-tag.js"></script>
+
+</body>
+>>>>>>> master
 </html>
