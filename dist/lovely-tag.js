@@ -13,7 +13,7 @@
         value: this.text,
         checked: 'checked'
       });
-      this.$ele = $('<div>').addClass('tag').text("" + (hasHashTag ? '#' : void 0) + this.text).append(this.$checkbox).click((function(_this) {
+      this.$ele = $('<div>').addClass('tag').text("" + (hasHashTag ? '#' : '') + this.text).append(this.$checkbox).click((function(_this) {
         return function() {
           if (_this.$ele.hasClass('to-be-crossed')) {
             return _this.destroy();
